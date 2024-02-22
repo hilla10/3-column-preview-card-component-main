@@ -140,17 +140,15 @@ a:hover {
     color: var(--Bright-orange);
 }
 
-
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
+    .main__flex {
+        display: flex;
+        justify-content: center;
+    }
 
     .main {
         width: 68%;
         margin: 10.6rem auto;
-    }
-
-    .main__flex {
-        display: flex;
-        justify-content: center;
     }
 
     .bg__orange {
