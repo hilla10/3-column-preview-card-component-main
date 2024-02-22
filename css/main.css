@@ -117,6 +117,30 @@ p {
     color: var(--Very-dark-cyan);
 }
 
+footer {
+    display: block;
+    width: 100%;
+    padding: 2.2rem;
+    text-align: center;
+    margin-top: 2rem;
+    background: var(--Dark-cyan);
+    color: var(--Transparent-white);
+    font-size: 1.1rem;
+}
+
+a {
+    font-family: 'Big Shoulders Display',
+        sans-serif;
+    color: var(--Transparent-white);
+    transition: 400ms ease-in-out;
+    letter-spacing: 1px;
+}
+
+a:hover {
+    color: var(--Bright-orange);
+}
+
+
 @media (min-width: 768px) {
 
     .main {
