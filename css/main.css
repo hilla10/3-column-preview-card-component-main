@@ -1,0 +1,144 @@
+/* Lexend Deca */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+/* Big Shoulders Display */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root {
+    --Bright-orange: hsl(31, 77%, 52%);
+    --Dark-cyan: hsl(184, 100%, 22%);
+    --Very-dark-cyan: hsl(179, 100%, 13%);
+    --Transparent-white: hsla(0, 0%, 100%, 0.75);
+    /* (paragraphs)*/
+    --Very-light-gray: hsl(0, 0%, 95%);
+    /* (background, headings, buttons)*/
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: 'Lexend Deca',
+        sans-serif;
+    background: var(--Very-light-gray);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: calc(100vh - 0.1px);
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 87%;
+    margin: 88px auto;
+}
+
+.main__flex {
+    width: 100%;
+}
+
+.bg__orange {
+    background: var(--Bright-orange);
+    border-radius: 10px 10px 0 0;
+}
+
+.bg__dark {
+    background: var(--Dark-cyan);
+}
+
+.bg__very-dark {
+    background: var(--Very-dark-cyan);
+    border-radius: 0 0 10px 10px;
+}
+
+.col-4 {
+    padding: 48px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display',
+        sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin-top: 1.96rem;
+    margin-bottom: 1.7rem;
+    color: var(--Very-light-gray);
+}
+
+p {
+    line-height: 1.6;
+    font-size: .94rem;
+    color: var(--Transparent-white);
+
+}
+
+.btn {
+    font-family: 'Lexend Deca',
+        sans-serif;
+    display: inline-block;
+    padding: .853rem 1.81rem;
+    margin-top: 1.7rem;
+    border-radius: 1.5rem;
+    font-size: 1rem;
+    font-weight: 400;
+    border: none;
+    outline: none;
+    background: var(--Very-light-gray);
+    cursor: pointer;
+    transition: 400ms ease-in-out;
+}
+
+.btn:hover {
+    color: var(--Transparent-white);
+    outline: 2px solid var(--Transparent-white);
+    background: transparent;
+}
+
+.btn__orange {
+    color: var(--Bright-orange);
+}
+
+.btn__dark {
+    color: var(--Dark-cyan);
+}
+
+.btn__very-dark {
+    color: var(--Very-dark-cyan);
+}
+
+@media (min-width: 768px) {
+
+    .main {
+        width: 68%;
+        margin: 10.6rem auto;
+    }
+
+    .main__flex {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bg__orange {
+        border-radius: 10px 0 0 10px;
+        padding-right: 55px;
+    }
+
+    .bg__very-dark {
+        border-radius: 0 10px 10px 0;
+    }
+
+    .btn {
+        margin-top: 5.44rem;
+    }
+}
